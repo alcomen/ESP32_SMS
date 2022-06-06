@@ -5,10 +5,10 @@
 const int GSM_BAUD_RATE = 9600;
 const int RX_PIN = 4, TX_PIN = 2;
 
-#define numeroComando "+5512981151296" //numero para validacao e inicio dos comandos.
+#define numeroComando "+55xxxxxxxx" //numero para validacao e inicio dos comandos.
 
 bool temSMS = false;
-String telefoneSMS = "+5512997079681";
+String telefoneSMS = "+55xxxxxxxxxx";
 String dataHoraSMS;
 String mensagemSMS;
 String comandoGSM = "";
@@ -33,7 +33,7 @@ void setup() {
    enviaSMS(telefoneSMS, "LED ligado!");
 /*  SerialGSM.print("AT+CMGF=1\r");
   delay(1000);
-  SerialGSM.print("AT+CMGS=\"12981151296\"\r");
+  SerialGSM.print("AT+CMGS=\"xxxxxxxx\"\r");
   delay(1000);
   SerialGSM.println("Your message to send");
   SerialGSM.print("\r");
